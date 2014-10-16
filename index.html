@@ -140,7 +140,17 @@
 				$('#intenseSentence').html(responseObj.intense_sentence.sentence);
 
 				// average_intensity
-				$('#average_intensity').html(responseObj.average_intensity)
+				$('#average_intensity').html(responseObj.average_intensity);
+
+				// breakdown
+				$('#affection_friendliness').html(responseObj.affection_friendliness);
+				$('#amusement_excitement').html(responseObj.amusement_excitement);
+				$('#anger_loathing').html(responseObj.anger_loathing);
+				$('#contentment_gratitude').html(responseObj.contentment_gratitude);
+				$('#enjoyment_elation').html(responseObj.enjoyment_elation);
+				$('#fear_uneasiness').html(responseObj.fear_uneasiness);
+				$('#humiliation_shame').html(responseObj.humiliation_shame);
+				$('#sadness_grief').html(responseObj.sadness_grief);
 			}
 
 
