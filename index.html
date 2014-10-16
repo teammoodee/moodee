@@ -65,9 +65,25 @@
 		<br/>
 		Sentiment: <span id="sentiment"></span>
 		<br/>
+		Average Intensity: <span id="average_intensity"></span>
+		<br/>
 		Clarity: <span id="clarity"></span>
 		<br/>
 		Intense Sentence: "<span id="intenseSentence"></span>"
+
+		<br/><br/>
+		Breakdown: <br/>
+
+		affection_friendliness: <span id="affection_friendliness"></span><br/>
+		amusement_excitement: <span id="amusement_excitement"></span><br/>
+		anger_loathing: <span id="anger_loathing"></span><br/>
+		contentment_gratitude: <span id="contentment_gratitude"></span><br/>
+		enjoyment_elation: <span id="enjoyment_elation"></span><br/>
+		fear_uneasiness: <span id="fear_uneasiness"></span><br/>
+		humiliation_shame: <span id="humiliation_shame"></span><br/>
+		sadness_grief: <span id="sadness_grief"></span><br/>
+
+
 	</body>
 	<script type="text/javascript">
 			//var lymbix = new $.lymbix('8c1a36ec73827cd2cfac9d943d981cbacf671d65');
@@ -123,7 +139,8 @@
 				// intense sentence
 				$('#intenseSentence').html(responseObj.intense_sentence.sentence);
 
-
+				// average_intensity
+				$('#average_intensity').html(responseObj.average_intensity)
 			}
 
 
