@@ -64,6 +64,8 @@
 		Dominant Emotion: <span id="dominantEmotionText"></span>
 		<br/>
 		Sentiment: <span id="sentiment"></span>
+		<br/>
+		Clarity: <span id="clarity"></span>
 
 	</body>
 	<script type="text/javascript">
@@ -113,6 +115,9 @@
 
 				// sentiment
 				$('#sentiment').html(responseObj.article_sentiment.sentiment);
+
+				// clarity
+				$('#clarity').html(responseObj.clarity);
 			}
 
 
