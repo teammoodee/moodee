@@ -7,44 +7,44 @@
 	   	<style>
 	   	.contentment
 	   	{
-	    		width:100px; height:100px;
-	    		background: url('emoticons.png') 0 0;
+    		width:100px; height:100px;
+    		background: url('emoticons.png') 0 0;
 		}
 
 		.enjoyment
    		{
    			width:100px; height:100px;
-    			background: url('emoticons.png') 300px 0;
+    		background: url('emoticons.png') 300px 0;
 		}
 
 		.fear
 	   	{
-	    		width:100px; height:100px;
-	    		background: url('emoticons.png') 0 405px;
+	    	width:100px; height:100px;
+	    	background: url('emoticons.png') 0 405px;
 		}
 
 		.humiliation
 	   	{
-	    		width:100px; height:100px;
-	    		background: url('emoticons.png') 400px 405px;
+	    	width:100px; height:100px;
+	    	background: url('emoticons.png') 400px 405px;
 		}
 
 		.sadness
 	   	{
-	    		width:100px; height:100px;
-	    		background: url('emoticons.png') 300px 200px;
+	    	width:100px; height:100px;
+	    	background: url('emoticons.png') 300px 200px;
 		}
 
 		.affection
    		{
-	    		width:100px; height:100px;
-	    		background: url('emoticons.png') 400px 300px;
+    		width:100px; height:100px;
+    		background: url('emoticons.png') 400px 300px;
 		}
 
 		.amusement
    		{
-	    		width:100px; height:100px;
-	    		background: url('emoticons.png') 100px 0;
+    		width:100px; height:100px;
+    		background: url('emoticons.png') 100px 0;
 		}
 
 		.anger
@@ -56,6 +56,7 @@
 	</head>
 	<body>
 		<div id="dominantEmotion"> </div>
+		<div id="dominantEmitionText"></div>
 
 	</body>
 	<script type="text/javascript">
@@ -71,10 +72,29 @@
 				{
 					case 'affection_friendliness':
 						$('#dominantEmotion').addClass('affection');
+						$('#dominantEmotion').html('Dominant Emotion: Affection / Friendliness');
 						break;
 					case 'anger_loathing':
-						console.log('anger!');
 						$('#dominantEmotion').addClass('anger');
+						$('#dominantEmotion').html('Dominant Emotion: Anger / Loathing');
+						break;
+					case 'contentment_gratitude':
+						$('#dominantEmotion').addClass('contentment');
+						break;
+					case 'enjoyment_elation':
+						$('#dominantEmotion').addClass('enjoyment');
+						break;
+					case 'fear_uneasiness':
+						$('#dominantEmotion').addClass('fear');
+						break;
+					case 'humiliation_shame':
+						$('#dominantEmotion').addClass('humiliation');
+						break;
+					case 'sadness_grief':
+						$('#dominantEmotion').addClass('sadness');
+						break;
+					case 'amusement_excitement':
+						$('#dominantEmotion').addClass('amusement');
 						break;
 				}
 			}
