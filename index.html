@@ -15,6 +15,17 @@
 			function buildDisplay(responseObj)
 			{
 				console.log('responseObj', responseObj);
+
+				// handle the dominant emotion
+				switch (responseObj.dominant_emotion)
+				{
+					case 'affection_friendliness'
+						$('.dominantEmotion').addClass('affection')
+						break;
+					case 'anger_loathing'
+						$('.dominantEmotion').addClass('anger')
+						break;
+				}
 			}
 		</script>
 	   	<style>
@@ -68,9 +79,7 @@
 	   </style>
 	</head>
 	<body>
-		hello! what's your problem!
-
-		<div class="anger"> </div>
+		<div id="dominantEmotion"> </div>
 
 	</body>
 </html>
