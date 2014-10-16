@@ -66,7 +66,8 @@
 		Sentiment: <span id="sentiment"></span>
 		<br/>
 		Clarity: <span id="clarity"></span>
-
+		<br/>
+		Intense Sentence: <span id="intenseSentence"></span>
 	</body>
 	<script type="text/javascript">
 			//var lymbix = new $.lymbix('8c1a36ec73827cd2cfac9d943d981cbacf671d65');
@@ -118,6 +119,11 @@
 
 				// clarity
 				$('#clarity').html(responseObj.clarity);
+
+				// intense sentence
+				$('#intenseSentence').html(responseObj.intense_sentence.sentence);
+
+
 			}
 
 
