@@ -65,6 +65,9 @@ function buildDisplay(responseObj)
 	$('#sadness_grief').html(responseObj.sadness_grief);
 }
 
+
+function
+
 $( document ).ready(function()
 {
 	var response = {"article":"I think you should get off your pedestal.","ignored_terms":[],"affection_friendliness":0.13,"enjoyment_elation":0.34,"amusement_excitement":0.25,"contentment_gratitude":0.57,"sadness_grief":-6.35,"anger_loathing":-10,"fear_uneasiness":-0.08,"humiliation_shame":-1.76,"dominant_emotion":"anger_loathing","average_intensity":1.21,"article_sentiment":{"sentiment":"Negative","score":-10},"coverage":95,"intense_sentence":{"sentence":"I think you should get off your pedestal.","dominant_emotion":"anger_loathing","intensity":10},"clarity":94.19};

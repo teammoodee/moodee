@@ -11,7 +11,7 @@
     };
 
     function getSubjectRequest(id) {
-        // Return a GetItem operation request for the subject of the specified item. 
+        // Return a GetItem operation request for the subject of the specified item.
         var result =
      '<?xml version="1.0" encoding="utf-8"?>' +
      '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' +
@@ -47,9 +47,6 @@
         var result = asyncResult.value;
         var context = asyncResult.context;
 
-        var content = $.parseJSON(result.Body);
-
-        console.log(content);
         console.log(result);
     }
 
