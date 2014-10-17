@@ -60,35 +60,35 @@
 			{
 				case 'affection_friendliness':
 					$('#dominantEmotion').addClass('affection');
-					$('#dominantEmotionText').html('Affection / Friendliness');
+					//$('#dominantEmotionText').html('Affection / Friendliness');
 					break;
 				case 'anger_loathing':
 					$('#dominantEmotion').addClass('anger');
-					$('#dominantEmotionText').html('Anger / Loathing');
+					//$('#dominantEmotionText').html('Anger / Loathing');
 					break;
 				case 'contentment_gratitude':
 					$('#dominantEmotion').addClass('contentment');
-					$('#dominantEmotionText').html('Contentment / Gratitude');
+					//$('#dominantEmotionText').html('Contentment / Gratitude');
 					break;
 				case 'enjoyment_elation':
 					$('#dominantEmotion').addClass('enjoyment');
-					$('#dominantEmotionText').html('Enjoyment / Elation');
+					//$('#dominantEmotionText').html('Enjoyment / Elation');
 					break;
 				case 'fear_uneasiness':
 					$('#dominantEmotion').addClass('fear');
-					$('#dominantEmotionText').html('Fear Uneasiness');
+					//$('#dominantEmotionText').html('Fear Uneasiness');
 					break;
 				case 'humiliation_shame':
 					$('#dominantEmotion').addClass('humiliation');
-					$('#dominantEmotionText').html('Humiliation / Shame');
+					//$('#dominantEmotionText').html('Humiliation / Shame');
 					break;
 				case 'sadness_grief':
 					$('#dominantEmotion').addClass('sadness');
-					$('#dominantEmotionText').html('Sadness / Grief');
+					//$('#dominantEmotionText').html('Sadness / Grief');
 					break;
 				case 'amusement_excitement':
 					$('#dominantEmotion').addClass('amusement');
-					$('#dominantEmotionText').html('Amusement / Excitement');
+					//$('#dominantEmotionText').html('Amusement / Excitement');
 					break;
 			}
 
@@ -99,7 +99,7 @@
 			$('#clarity').html(responseObj.clarity);
 
 			// intense sentence
-			$('#intenseSentence').html(responseObj.intense_sentence.sentence);
+			$('#dominantEmotionText').html(responseObj.intense_sentence.sentence);
 
 			// average_intensity
 			$('#average_intensity').html(responseObj.average_intensity);
