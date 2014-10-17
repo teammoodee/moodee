@@ -70,7 +70,6 @@
         var lymbix = new $.lymbix('8c1a36ec73827cd2cfac9d943d981cbacf671d65');
         lymbix.tonalize(content, function (object)
             {
-                blah = object;
                 console.log(object);
                 buildDisplay(object);
             });
