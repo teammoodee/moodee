@@ -6,11 +6,14 @@
         $(document).ready(function () {
             app.initialize();
 
-            getBody();
+            getSubject();
         });
     };
 
-    function getBody() {
-        console.log(Office.context.mailbox.item.body);
+    function getSubject() {
+        Office.context.mailbox.item.subject.getAsync(function (result) {
+            app.showNotification('The current subject is', result.value)
+        });
     }
+
 })();
