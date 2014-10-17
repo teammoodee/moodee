@@ -73,7 +73,15 @@
 	background: url('emoticons.png') 100px 200px;
 	margin-left: auto;
 	margin-right: auto;
-	}
+}
+
+.neutral
+{
+	width:100px; height:100px;
+	background: url('emoticons.png') 100px 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 #dominantEmotionText
 {
