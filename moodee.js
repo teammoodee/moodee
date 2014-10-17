@@ -1,5 +1,3 @@
-//var lymbix = new $.lymbix('8c1a36ec73827cd2cfac9d943d981cbacf671d65');
-//lymbix.tonalize('I think you should get off your pedestal.', function (object) { blah = object; console.log(object) });
 
 function buildDisplay(responseObj)
 {
@@ -49,6 +47,7 @@ function buildDisplay(responseObj)
 			break;
 	}
 
+	// handle the sentiment
 	switch (responseObj.article_sentiment.sentiment)
 	{
 		case "Negative":
@@ -63,7 +62,6 @@ function buildDisplay(responseObj)
 	}
 
 	// sentiment
-
 	$('#sentiment').html(responseObj.article_sentiment.sentiment);
 
 	// clarity
