@@ -3,7 +3,7 @@
 <!--Created:cbbc9d22-5cf7-4e4c-8ee9-42a772aae58a-->
 <OfficeApp xsi:type="MailApp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/office/appforoffice/1.0">
   <Id>c3d7ecd3-9602-42d5-8c33-39710c0d3235</Id>
-  <Version>1.0.0.1</Version>
+  <Version>1.0.0.2</Version>
   <ProviderName>Moodee Productions</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Moodee" />
@@ -15,11 +15,11 @@
   </Capabilities>
   <DesktopSettings>
     <SourceLocation DefaultValue="https://moodee.azurewebsites.net" />
-    <RequestedHeight>200</RequestedHeight>
+    <RequestedHeight>210</RequestedHeight>
   </DesktopSettings>
   <TabletSettings>
     <SourceLocation DefaultValue="https://moodee.azurewebsites.net" />
-    <RequestedHeight>200</RequestedHeight>
+    <RequestedHeight>210</RequestedHeight>
   </TabletSettings>
   <PhoneSettings>
     <SourceLocation DefaultValue="https://moodee.azurewebsites.net" />
