@@ -67,7 +67,7 @@
 
 
         console.log('content',content);
-        var lymbix = new $.lymbix('8c1a36ec73827cd2cfac9d943d981cbacf671d65');
+        var lymbix = new $.lymbix('2275c06beb43ed5e841b85dca3186e5ee39540e9');
         lymbix.tonalize(content, function (object)
         {
             console.log(object);
