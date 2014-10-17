@@ -62,7 +62,7 @@
 
         console.log(xmlDoc);
 
-        var thing = xmlDoc.getElementsByTagName('t:Body');
+        var thing = xmlDoc.getElementsByTagName('Body');
         console.log('thing',thing);
     }
 
