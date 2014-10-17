@@ -7,7 +7,7 @@
   <ProviderName>Moodee Productions</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Moodee" />
-  <Description DefaultValue="moodee" />
+  <Description DefaultValue="R U Moodee" />
   <IconUrl DefaultValue="https://moodee.azurewebsites.net/red_smiley_64x64.png" />
   <SupportUrl DefaultValue="https://moodee.azurewebsites.net/support.html" />
   <Capabilities>
@@ -15,11 +15,11 @@
   </Capabilities>
   <DesktopSettings>
     <SourceLocation DefaultValue="https://moodee.azurewebsites.net" />
-    <RequestedHeight>300</RequestedHeight>
+    <RequestedHeight>200</RequestedHeight>
   </DesktopSettings>
   <TabletSettings>
     <SourceLocation DefaultValue="https://moodee.azurewebsites.net" />
-    <RequestedHeight>300</RequestedHeight>
+    <RequestedHeight>200</RequestedHeight>
   </TabletSettings>
   <PhoneSettings>
     <SourceLocation DefaultValue="https://moodee.azurewebsites.net" />
