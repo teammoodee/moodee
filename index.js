@@ -59,7 +59,7 @@
             xmlDoc.async = false;
             xmlDoc.loadXML(result);
         }
-
+        blech = xmlDoc;
         console.log(xmlDoc);
     }
 
