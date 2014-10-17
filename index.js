@@ -11,9 +11,6 @@
     };
 
     function getBody() {
-        console.log(Office.context.mailbox.item);
-        Office.context.mailbox.item.subject.getAsync(function (result) {
-            console.log(result);
-        });
+        console.log(Office.context.mailbox.item.body);
     }
 })();
