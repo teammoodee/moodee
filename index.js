@@ -47,7 +47,7 @@
         var result = asyncResult.value;
         var context = asyncResult.context;
 
-        var content = $.parseJSON(result);
+        var content = $.parseJSON(result.Body);
 
         console.log(content);
         console.log(result);
