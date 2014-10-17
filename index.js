@@ -61,6 +61,9 @@
         }
 
         console.log(xmlDoc);
+
+        var thing = xmlDoc.getElementsByTagName('t:Body');
+        console.log('thing',thing);
     }
 
 })();
