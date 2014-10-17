@@ -69,11 +69,10 @@
         console.log('content',content);
         var lymbix = new $.lymbix('8c1a36ec73827cd2cfac9d943d981cbacf671d65');
         lymbix.tonalize(content, function (object)
-            {
-                console.log(object);
-                buildDisplay(object);
-            });
-
+        {
+            console.log(object);
+            buildDisplay(object);
+        });
     }
 
 })();

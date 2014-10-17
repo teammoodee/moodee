@@ -42,6 +42,19 @@ function buildDisplay(responseObj)
 			break;
 	}
 
+	switch (responseObj.article_sentiment.sentiment)
+	{
+		case "Negative":
+			$('#emotionColor').css('background-color', 'red');
+			break;
+		case "Positive":
+			$('#emotionColor').css('background-color', 'green');
+			break;
+		case "Neutral":
+			$('#emotionColor').css('background-color', 'blue');
+			break;
+	}
+
 	// sentiment
 	$('#sentiment').html(responseObj.article_sentiment.sentiment);
 
