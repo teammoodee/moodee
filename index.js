@@ -55,12 +55,12 @@
         if (window.DOMParser) {
             var parser = new DOMParser();
             xmlDoc = parser.parseFromString(result, "text/xml");
-            content = xmlDoc.getElementsByTagName('Body')[1];
+            content = xmlDoc.getElementsByTagName('Body')[1].innerHTML;
         } else { // Internet Explorer
             xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
             xmlDoc.async = false;
             xmlDoc.loadXML(result);
-            content = xmlDoc.getElementsByTagName('t:Body')[1];
+            content = xmlDoc.getElementsByTagName('t:Body')[1].innerHTML;
         }
 
         console.log(xmlDoc);
