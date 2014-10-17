@@ -47,6 +47,7 @@
         var result = asyncResult.value;
         var context = asyncResult.context;
         var xmlDoc;
+        var content;
 
 
         console.log(result);
@@ -54,16 +55,18 @@
         if (window.DOMParser) {
             var parser = new DOMParser();
             xmlDoc = parser.parseFromString(result, "text/xml");
+            content = xmlDoc.getElementsByTagName('Body')[1];
         } else { // Internet Explorer
             xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
             xmlDoc.async = false;
             xmlDoc.loadXML(result);
+            content = xmlDoc.getElementsByTagName('t:Body')[1];
         }
 
         console.log(xmlDoc);
 
-        var thing = xmlDoc.getElementsByTagName('Body');
-        console.log('thing',thing);
+
+        console.log('content',content);
     }
 
 })();
