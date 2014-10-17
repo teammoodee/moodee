@@ -24,7 +24,7 @@
   <PhoneSettings>
     <SourceLocation DefaultValue="https://moodee.azurewebsites.net" />
   </PhoneSettings>
-  <Permissions>ReadItem</Permissions>
+  <Permissions>ReadWriteMailbox</Permissions>
   <Rule xsi:type="RuleCollection" Mode="And">
     <!-- To add more complex rules, add additional rule elements -->
     <Rule xsi:type="ItemIs" ItemType="Message" />
