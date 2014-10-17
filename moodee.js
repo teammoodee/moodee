@@ -40,7 +40,7 @@ function buildDisplay(responseObj)
 			$('#dominantEmotion').addClass('amusement');
 			//$('#dominantEmotionText').html('Amusement / Excitement');
 			break;
-		case 'neutral':
+		case 'Neutral':
 			$('#dominantEmotion').addClass('neutral');
 			//$('#dominantEmotionText').html('Amusement / Excitement');
 			break;
