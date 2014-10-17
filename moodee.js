@@ -40,6 +40,10 @@ function buildDisplay(responseObj)
 			$('#dominantEmotion').addClass('amusement');
 			//$('#dominantEmotionText').html('Amusement / Excitement');
 			break;
+		case 'neutral':
+			$('#dominantEmotion').addClass('neutral');
+			//$('#dominantEmotionText').html('Amusement / Excitement');
+			break;
 	}
 
 	switch (responseObj.article_sentiment.sentiment)
