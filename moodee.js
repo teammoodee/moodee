@@ -5,6 +5,9 @@ function buildDisplay(responseObj)
 {
 	console.log('responseObj', responseObj);
 
+	$('#moodeeLoading').hide();
+	$('#emotionColor').show();
+
 	// handle the dominant emotion
 	switch (responseObj.dominant_emotion)
 	{
