@@ -26,7 +26,7 @@
      '      <ItemShape>' +
      '        <t:BaseShape>IdOnly</t:BaseShape>' +
      '        <t:AdditionalProperties>' +
-     '            <t:FieldURI FieldURI="item:Subject"/>' +
+     '            <t:FieldURI FieldURI="item:Body"/>' +
      '        </t:AdditionalProperties>' +
      '      </ItemShape>' +
      '      <ItemIds><t:ItemId Id="' + id + '"/></ItemIds>' +
