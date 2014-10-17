@@ -46,6 +46,8 @@
     function callback(asyncResult) {
         var result = asyncResult.value;
         var context = asyncResult.context;
+        var xmlDoc;
+
 
         console.log(result);
 
