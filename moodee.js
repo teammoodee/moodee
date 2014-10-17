@@ -80,6 +80,7 @@ function buildDisplay(responseObj)
 
 function showAdditionalInfo()
 {
+	$('#emotionColor').hide();
 	$('#extraInformation').show();
 }
 
