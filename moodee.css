@@ -7,7 +7,7 @@
 {
 	background-color: red;
 	width: 100%;
-	height: 145px;
+	height: auto;
 	padding: 10px 0 0 0;
 }
 
@@ -79,7 +79,6 @@
 {
 	margin-left: auto;
 	margin-right: auto;
-	width: 500px;
 	color: white;
 	text-align: center;
 	font-family: Arial, 'Arial Unicode MS', verdana, Helvetica, sans-serif;
