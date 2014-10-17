@@ -93,3 +93,10 @@
 	font-size: 36px;
 	margin-top: 20px;
 }
+
+#extraInformation
+{
+	font-family: Arial, 'Arial Unicode MS', verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 10px;
+}
