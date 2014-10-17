@@ -5,21 +5,14 @@
     Office.initialize = function (reason) {
         $(document).ready(function () {
             app.initialize();
+
+            getBody();
         });
     };
 
-    function setSubject() {
-        Office.context.mailbox.item.subject.setAsync("Hello world!");
-    }
-
-    function getSubject() {
-        Office.context.mailbox.item.subject.getAsync(function (result) {
-            app.showNotification('The current subject is', result.value)
+    function getBody() {
+        Office.context.mailbox.item.getBody.getAsync(function (result) {
+            console.log(result);
         });
     }
-
-    function addToRecipients() {
-        Office.context.mailbox.item.to.addAsync([Office.context.mailbox.userProfile.emailAddress]);
-    }
-
 })();
