@@ -66,7 +66,6 @@ function buildDisplay(responseObj)
 }
 
 
-function
 
 $( document ).ready(function()
 {
