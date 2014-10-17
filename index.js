@@ -24,8 +24,8 @@
      '  <soap:Body>' +
      '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +
      '      <ItemShape>' +
-     '        <t:BodyType>Text</t:BodyType>' +
      '        <t:BaseShape>IdOnly</t:BaseShape>' +
+     '        <t:BodyType>Text</t:BodyType>' +
      '        <t:AdditionalProperties>' +
      '            <t:FieldURI FieldURI="item:Body"/>' +
      '        </t:AdditionalProperties>' +
