@@ -67,6 +67,7 @@
 
 
         console.log('content',content);
+        buildDisplay(content);
     }
 
 })();
