@@ -1,4 +1,4 @@
-moodee - get emotional insight into your Office 365 email
+moodee - emotional insight into your email
 ======
 
 Office 365 App Developers of the World Unite! (Crickets...)
