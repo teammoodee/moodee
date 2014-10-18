@@ -39,7 +39,7 @@
     }
 
 
-    // Get the context, send the request
+    // Get the context, send the request to the soap service
     function sendRequest() {
         var mailbox = Office.context.mailbox;
         mailbox.makeEwsRequestAsync(getBodyRequest(mailbox.item.itemId), callback);
@@ -52,7 +52,7 @@
         var context = asyncResult.context;
         var xmlDoc, content;
 
-        console.log(result);
+        console.log('callback result', result);
 
         // We can't just $.parseXML this stuff... it's way too ugly.
         // luckily, the dom parser is more forgiving...
@@ -67,7 +67,7 @@
             content = xmlDoc.getElementsByTagName('t:Body')[1].innerHTML;
         }
 
-        console.log(xmlDoc);
+        console.log('xmlDoc',xmlDoc);
         console.log('content',content);
 
         // connect to the lymbix API and get some content...
@@ -79,9 +79,10 @@
     }
 
 
+    // build the output to the app area...
     function buildDisplay(responseObj)
     {
-        console.log('responseObj', responseObj);
+        console.log('lymbix responseObj', responseObj);
 
         $('#moodeeLoading').hide();
         $('#emotionColor').show();
@@ -123,11 +124,11 @@
                 break;
             case 'Neutral':
                 $('#dominantEmotion').addClass('neutral');
-                $('#dominantEmotionExtraText').html('Amusement / Excitement');
+                $('#dominantEmotionExtraText').html('Neutral');
                 break;
         }
 
-        // handle the sentiment
+        // handle the sentiment color
         switch (responseObj.article_sentiment.sentiment)
         {
             case "Negative":
@@ -179,7 +180,7 @@
     }
 
 
-    // init
+    // init!
     $( document ).ready(function()
     {
         $('#emotionColor').click(showAdditionalInfo);
